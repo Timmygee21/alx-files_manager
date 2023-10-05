@@ -8,8 +8,8 @@ const app = express();
 app.use(express.json());
 app.use('/', router);
 
-app.listen(port, () => {
-  console.log(`server running on port ${port}`);
+app.listen(port,'0.0.0.0', () => {
+  console.log(`server running on port http://0.0.0.0:${port}`);
 });
 
 export default app;
